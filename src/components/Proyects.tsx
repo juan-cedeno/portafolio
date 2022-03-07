@@ -1,5 +1,5 @@
-import { Title } from './Title';
 import { useEffect, useState } from 'react';
+import { Title } from './Title';
 import { getProyectss } from '../helpers/ApiPetitions';
 import { Proyect } from '../interfaces/ApiInterfaces';
 import { ProyectItems } from '.';
@@ -18,7 +18,7 @@ export const Proyects = () => {
             setProyect(proyects)
         })
         setLoading(false)
-    }, [])
+    }, [loading])
     
     
     return (
