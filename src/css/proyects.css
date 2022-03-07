@@ -1,0 +1,59 @@
+.container_proyect {
+    background-color: #131825;
+}
+.proyects{
+    display: flex;
+    width: 100vw;
+}
+.img_proyect{
+    width: 290px;
+    height: 190px;
+    border-radius: 7px;
+}
+.container_proyect_items{
+    display: flex;
+    border: 2px solid #212936;
+    margin: 10px;
+    width: 540px;
+    padding: 20px 30px;
+}
+.cont_proyect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+.cont_letter_proyect {
+    margin-left: 10px;
+    padding: 20px;
+}
+.name_proyect{
+    color: #fff;
+    font-size: 19px;
+    text-transform: capitalize;
+}
+.languaje_proyect{
+    text-transform: capitalize;
+    background: #58b381;
+    padding: 8px 5px;
+    border-radius: 35px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+.btn_proyect {
+    background: #1a2a6c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 0;
+    padding: 10px 25px;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}

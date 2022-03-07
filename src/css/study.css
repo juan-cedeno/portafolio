@@ -1,0 +1,31 @@
+.container_study{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.study{
+    display: flex;
+    flex-direction: column;
+}
+.name_study{
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #9DA3AE;
+    font-weight: 500;
+    margin: 0px;
+}
+.study_letter{
+    margin: 10px 20px;
+    text-transform: capitalize;
+    font-size: 13.5px;
+    color: #5282EA;
+}
+.study i {
+    color: #52B7AA;
+    font-size: 19px;
+    margin-right: 5px;
+}
+
+.img_study{
+    width: 700px;
+}

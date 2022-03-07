@@ -1,0 +1,11 @@
+.container_title {
+    padding: 40px 0px;
+}
+
+.container_title h2 {
+    text-transform: uppercase;
+    color: #9DA3AE;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}

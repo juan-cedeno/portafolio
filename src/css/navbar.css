@@ -1,0 +1,16 @@
+nav {
+    padding: 30px 50px;
+    background-color: #171C2A;
+}
+.menu_items {
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0px 20px;
+    color: #D2D5DA;
+    padding: 13px 15px;
+}
+.menu_items:hover{
+    background-color: #A7ACB5;
+    border-radius: 4px;
+    color: #ffff;
+}

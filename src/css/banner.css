@@ -1,0 +1,79 @@
+.container_banner {
+    background-color: #171C2A;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.hello {
+    background-color: #8DE3BA;
+    padding: 10px 5px;
+    margin: 0px;
+    width: 55px;
+    border-radius: 6px;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.name {
+    font-size: 55px;
+    width: 400px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 1px;
+    margin-bottom: 0px;
+}
+
+.letter_banner {
+    text-transform: capitalize;
+    color: #fff;
+    margin: 20px 0px;
+    font-size: 22px;
+}
+.cont_icon_banner{
+    margin: 20px 0px;
+}
+.cont_icon_banner i {
+    color: #fff;
+    font-size: 30px;
+    margin-right: 10px;
+}
+.cont_icon_banner i:hover{
+    color: grey;
+    cursor: pointer;
+}
+
+.btn_banner {
+    padding: 13px 30px;
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-right: 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 900;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.blue_bnt {
+    background: #4e54c8;
+    background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);
+    background: linear-gradient(to right, #8f94fb, #4e54c8);
+
+}
+
+.rose_btn {
+    background: #f953c6;
+    background: -webkit-linear-gradient(to right, #b91d73, #f953c6);
+    background: linear-gradient(to right, #b91d73, #f953c6);
+}
+
+
+.image_banner {
+    width: 700px;
+}

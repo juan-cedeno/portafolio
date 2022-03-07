@@ -1,0 +1,27 @@
+.container_contact{
+    padding: 30px;
+    background-color: #141824;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.phone{
+    display: flex;
+    flex-direction: column;
+}
+.img_contact{
+    width: 510px;
+}
+.cont_item{
+    font-size: 19px;
+    margin: 25px 90px;
+    color: #9EA3AD;
+    cursor: pointer;
+}
+.cont_item i {
+    margin-right: 30px;
+    font-size: 20px;
+    color: #fff;
+}
