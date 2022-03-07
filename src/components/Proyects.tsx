@@ -26,12 +26,12 @@ export const Proyects = () => {
                 <Title title='Proyects'/>
                 <div className='proyects'>
                     <div className='cont_proyect'>
-                        {/* {
-                            proyect.map(items => (
+                        {
+                            proyect.map(items => 
                                 loading ? <SkeletorSkills/> :                                
                                 <ProyectItems items = {items} key={items._id}/>
-                            ))
-                        } */}
+                            )
+                        }
                     </div>
                 </div>
             </div>
