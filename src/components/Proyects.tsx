@@ -19,7 +19,7 @@ export const Proyects = () => {
         setLoading(false)
     }, [])
     
-    if (proyect.length === 0) {
+    if (proyect === undefined) {
         return <p>Hello</p>
     }
     return (
