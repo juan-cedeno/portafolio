@@ -8,7 +8,7 @@ export const Study = () => {
 
     const [course, setCourse] = useState<Course[]>([])
     const [loading, setLoading] = useState(true)
-    
+
     useEffect(() => {
         getCourses().then(courses=> {
            setCourse(courses)
@@ -30,7 +30,7 @@ export const Study = () => {
                 }
                 <div>
                     <img 
-                        src="https://i.ibb.co/SV08F16/education.png" 
+                        src={require('../assets/education.png')}
                         alt="Study img" 
                         className="img_study"
                         />

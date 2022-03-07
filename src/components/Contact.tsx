@@ -8,7 +8,7 @@ export const Contact = () => {
             <Title title='contact'/>
             <div className='contact'>
                     <img 
-                        src="https://i.ibb.co/52Pp7G3/contact.png" 
+                        src={require('../assets/contact.png')} 
                         alt="Contact" 
                         className='img_contact'
                         />

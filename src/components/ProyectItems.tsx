@@ -7,7 +7,7 @@ interface Props {
 }
 
 export const ProyectItems = ({items}: Props) => {
-    const {image,languaje,name} = items
+    const {image,languaje,name ,link} = items
     return (
         <>
             <div className='container_proyect_items'>
@@ -18,7 +18,12 @@ export const ProyectItems = ({items}: Props) => {
                 <div className='cont_letter_proyect'>
                     <p className='name_proyect'>{name}</p>
                     <p className='languaje_proyect'>{languaje}</p>
-                    <button className='btn_proyect'>View Project</button>
+                    <a 
+                        href={link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className='btn_proyect'
+                        >View Project</a>
                 </div>
             </div>
         </>

@@ -32,4 +32,5 @@ export interface Proyect {
     image:    string;
     languaje: string;
     name:     string;
+    link:     string;
 }

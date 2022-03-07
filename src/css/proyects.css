@@ -56,4 +56,8 @@
     color: #fff;
     cursor: pointer;
     outline: none;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 13px;
 }
