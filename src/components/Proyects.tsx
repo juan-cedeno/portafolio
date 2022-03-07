@@ -11,16 +11,15 @@ export const Proyects = () => {
 
     const [proyect, setProyect] = useState<Proyect[]>([])
     const [loading, setLoading] = useState(true)
-    console.log(proyect);
-
+    
     useEffect(() => {
-        getProyects().then(proyects => (
+        getProyects().then(proyects => {
             setProyect(proyects)
-        ))
+        })
         setLoading(false)
     }, [])
-
-
+    console.log(proyect);
+    
     return (
         <>
             <div className='container_proyect' id='proyect'>
