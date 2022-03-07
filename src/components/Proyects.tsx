@@ -19,9 +19,6 @@ export const Proyects = () => {
         setLoading(false)
     }, [])
     
-    // if (proyect === undefined) {
-    //     return <p>Hello</p>
-    // }
     console.log(proyect);
     
     return (
@@ -31,7 +28,7 @@ export const Proyects = () => {
                 <div className='proyects'>
                     <div className='cont_proyect'>
                         {
-                            proyect?.map(items => 
+                            proyect!.map(items => 
                                 loading ? <SkeletorSkills/> :                                
                                 <ProyectItems 
                                     items = {items} 
