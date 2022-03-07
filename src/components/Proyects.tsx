@@ -18,7 +18,9 @@ export const Proyects = () => {
         })
         setLoading(false)
     }, [])
-    console.log(proyect);
+    if (proyect.length === 0) {
+        return []
+    }
     
     return (
         <>
