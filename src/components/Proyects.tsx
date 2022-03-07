@@ -18,10 +18,10 @@ export const Proyects = () => {
         })
         setLoading(false)
     }, [])
-    if (proyect.length === 0) {
-        return []
-    }
     
+    if (proyect.length === 0) {
+        return <p>Hello</p>
+    }
     return (
         <>
             <div className='container_proyect' id='proyect'>
