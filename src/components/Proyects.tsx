@@ -15,7 +15,7 @@ export const Proyects = () => {
     
     useEffect(() => {
         getProyectss().then(proyects => {
-            setProyect(proyects)
+            setProyect(proyect)
         })
         setLoading(false)
     }, [])

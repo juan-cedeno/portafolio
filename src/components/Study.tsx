@@ -8,6 +8,8 @@ export const Study = () => {
 
     const [course, setCourse] = useState<Course[]>([])
     const [loading, setLoading] = useState(true)
+    console.log(course);
+    
 
     useEffect(() => {
         getCourses().then(courses=> {
