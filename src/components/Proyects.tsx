@@ -13,7 +13,6 @@ export const Proyects = () => {
     const [loading, setLoading] = useState(true)
     console.log(proyect);
 
-
     useEffect(() => {
         getProyects().then(proyects => (
             setProyect(proyects)
@@ -21,9 +20,6 @@ export const Proyects = () => {
         setLoading(false)
     }, [])
 
-    if (proyect === undefined) {
-        return []
-    }
 
     return (
         <>
@@ -31,12 +27,12 @@ export const Proyects = () => {
                 <Title title='Proyects'/>
                 <div className='proyects'>
                     <div className='cont_proyect'>
-                        {
+                        {/* {
                             proyect.map(items => (
                                 loading ? <SkeletorSkills/> :                                
                                 <ProyectItems items = {items} key={items._id}/>
                             ))
-                        }
+                        } */}
                     </div>
                 </div>
             </div>
