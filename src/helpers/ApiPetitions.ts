@@ -21,7 +21,7 @@ export const getSkills = async () => {
     }
 }
 
-export const getProyects = async () => {
+export const getProyectss = async () => {
     try {
         const {data} = await apiConfig.get<ProyectResponse>('/proyect')
         return data.proyects

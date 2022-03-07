@@ -21,7 +21,6 @@ export const Study = () => {
             <Title title="studies and courses"/>
             <div className="container_study">
                 {
-                    
                     course.map(items => 
                     loading ? <SkeletorStudy/> :
                     <StudyItems 

@@ -1,6 +1,6 @@
 import { Title } from './Title';
 import { useEffect, useState } from 'react';
-import { getProyects } from '../helpers/ApiPetitions';
+import { getProyectss } from '../helpers/ApiPetitions';
 import { Proyect } from '../interfaces/ApiInterfaces';
 import { ProyectItems } from '.';
 import { SkeletorSkills } from './SkeletorSkills';
@@ -11,15 +11,15 @@ export const Proyects = () => {
 
     const [proyect, setProyect] = useState<Proyect[]>([])
     const [loading, setLoading] = useState(true)
+    console.log(proyect);
     
     useEffect(() => {
-        getProyects().then(proyects => {
+        getProyectss().then(proyects => {
             setProyect(proyects)
         })
         setLoading(false)
     }, [])
     
-    console.log(proyect);
     
     return (
         <>
@@ -28,13 +28,13 @@ export const Proyects = () => {
                 <div className='proyects'>
                     <div className='cont_proyect'>
                         {
-                            proyect!.map(items => 
+                            proyect.map(items => 
+                                
                                 loading ? <SkeletorSkills/> :                                
                                 <ProyectItems 
-                                    items = {items} 
-                                    key={items._id}
-                                />
-                            )
+                                items = {items} 
+                                key={items._id}
+                                />)
                         }
                     </div>
                 </div>
