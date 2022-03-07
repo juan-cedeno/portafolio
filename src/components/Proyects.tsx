@@ -17,9 +17,7 @@ export const Proyects = () => {
             setProyect(proyects)
         })
         setLoading(false)
-    }, [loading])
-    console.log(proyect);
-    
+    }, [])
     
     return (
         <>
