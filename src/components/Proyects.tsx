@@ -11,6 +11,8 @@ export const Proyects = () => {
 
     const [proyect, setProyect] = useState<Proyect[]>([])
     const [loading, setLoading] = useState(true)
+    console.log(proyect);
+
 
     useEffect(() => {
         getProyects().then(proyects => (
@@ -18,6 +20,10 @@ export const Proyects = () => {
         ))
         setLoading(false)
     }, [])
+
+    if (proyect === undefined) {
+        return []
+    }
 
     return (
         <>
