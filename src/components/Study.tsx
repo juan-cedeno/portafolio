@@ -22,9 +22,9 @@ export const Study = () => {
             <div className="container_study">
                 {
                     loading ? <SkeletorStudy/> : 
-                    course.map(items => {
+                    course.map(items => (
                         <StudyItems items={items} key={items._id}/>
-                    })
+                    ))
                 }
                 <div>
                     <img 
