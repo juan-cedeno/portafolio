@@ -15,8 +15,8 @@ export const Proyects = () => {
     useEffect(() => {
         getProyectss().then(proyects => {
             setProyect(proyects)
+            setLoading(false)
         })
-        setLoading(false)
     }, [])
     
     return (
@@ -26,13 +26,12 @@ export const Proyects = () => {
                 <div className='proyects'>
                     <div className='cont_proyect'>
                         {
+                            loading ? <SkeletorSkills/> :                                
                             proyect.map(items => 
-                                
-                                loading ? <SkeletorSkills/> :                                
                                 <ProyectItems 
                                 items = {items} 
                                 key={items._id}
-                                />)
+                            />)
                         }
                     </div>
                 </div>

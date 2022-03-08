@@ -8,7 +8,7 @@ export const SkeletorStudy = (props: IContentLoaderProps) => {
             width={400}
             height={460}
             viewBox="0 0 400 460"
-            backgroundColor="#f3f3f3"
+            backgroundColor="#9EA3AD"
             foregroundColor="#ecebeb"
             {...props}
   >

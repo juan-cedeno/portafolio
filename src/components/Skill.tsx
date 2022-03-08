@@ -9,15 +9,15 @@ import { SkeletorSkills } from './SkeletorSkills';
 
 export const Skill = () => {
 
-    const [skills, setSkills] = useState<Skills[]>([])
+    const [skill, setSkill] = useState<Skills[]>([])
     const [loading, setLoading] = useState(true)
 
-    useEffect(() => {
-        getSkills().then(skill => (
-           setSkills(skill)
-        ))
-        setLoading(false)
-    }, [])
+   useEffect(() => {
+      getSkills().then(skills => {
+            setSkill(skills)
+            setLoading(false)
+      })
+   }, [])
 
     return (
         <>
@@ -32,8 +32,8 @@ export const Skill = () => {
                     <div>
                     <div className='img_skill'>
                         {
-                            skills.map(items => (
-                                loading ? <SkeletorSkills/> : 
+                            loading ? <SkeletorSkills/> : 
+                            skill.map(items => (
                                 <SkillsItems items = {items} key={items._id}/>
                             ))
                         }

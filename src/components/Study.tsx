@@ -11,9 +11,9 @@ export const Study = () => {
 
     useEffect(() => {
         getCourses().then(courses=> {
-           setCourse(courses)
+            setCourse(courses)
+            setLoading(false)
         })
-        setLoading(false)
     }, [])
 
     return (
@@ -21,12 +21,10 @@ export const Study = () => {
             <Title title="studies and courses"/>
             <div className="container_study">
                 {
-                    course.map(items => 
-                    loading ? <SkeletorStudy/> :
-                    <StudyItems 
-                        items = {items} 
-                        key={items._id}
-                    />)
+                    loading ? <SkeletorStudy/> : 
+                    course.map(items => {
+                        <StudyItems items={items} key={items._id}/>
+                    })
                 }
                 <div>
                     <img 
