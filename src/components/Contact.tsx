@@ -8,7 +8,7 @@ export const Contact = () => {
             <Title title='contact'/>
             <div className='contact'>
                     <img 
-                        src={require('../assets/contact.png')} 
+                        src={require('../assets/contact.webp')} 
                         alt="Contact" 
                         className='img_contact'
                         />

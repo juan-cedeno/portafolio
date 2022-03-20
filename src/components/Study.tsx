@@ -28,7 +28,7 @@ export const Study = () => {
                 }
                 <div>
                     <img 
-                        src={require('../assets/education.png')}
+                        src={require('../assets/education.webp')}
                         alt="Study img" 
                         className="img_study"
                         />

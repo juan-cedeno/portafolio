@@ -1,5 +1,6 @@
 import '../css/banner.css'
 
+
 export const Banner = () => {
 
     return (
@@ -28,7 +29,7 @@ export const Banner = () => {
                 </div>
                 <div>
                     <img 
-                        src={require('../assets/banner-img.png')}
+                        src={require('../assets/banner-img.webp')}
                         alt="img-banner-alt"
                         className='image_banner'
                         />
